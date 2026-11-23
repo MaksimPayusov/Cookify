@@ -1,0 +1,12 @@
+project_id = "cookify"
+
+[auth]
+site_url = "http://localhost:5173"
+
+[auth.email]
+enable_confirmations = true
+otp_length = 8
+
+[auth.email.template.confirmation]
+subject = "Код регистрации в Cookify"
+content_path = "./supabase/templates/confirmation.html"
